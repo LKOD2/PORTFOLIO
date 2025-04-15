@@ -23,7 +23,7 @@ body {
     animation: BackgroundAnimation 70s ease infinite;
 
     /* --color-resalte: #5cb2af; */
-    --color-resalte: red;
+    --color-resalte: #007bff;
     --color-resalte-2: #0056b3;
 
     --color-texto: black;
