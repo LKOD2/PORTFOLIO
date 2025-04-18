@@ -37,7 +37,7 @@ body {
     --color-shadow: #c0c0c0;
     --color-shadow-2: #0000001a;
 
-    
+
 }
 
 body.dark {
@@ -99,19 +99,13 @@ main {
 
 .section h2 {
     margin-bottom: 50px;
-    font-size: clamp(20px, 5vw, 50px);
+    font-size: clamp(25px, 5vw, 50px);
     font-weight: normal;
     position: relative;
     color: var(--color-texto-3);
 }
 
-@media screen and (max-width: 1200px) {
-    .section {
-        min-height: fit-content;
 
-    }
-    
-}
 
 
 /* --------- HEADER --------- */
@@ -204,7 +198,9 @@ main {
 
 .about-content {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "description image";
     align-items: center;
     gap: 20px;
     opacity: 0;
@@ -212,17 +208,18 @@ main {
 }
 
 .about-description {
-    grid-column: 1/7;
+    /* grid-column: 1/7; */
+    grid-area: description;
 }
 
 .about h2 {
-    font-size: clamp(20px, 5vw, 60px);
+    font-size: clamp(25px, 5vw, 60px);
     font-weight: normal;
     color: var(--color-texto);
 }
 
 .about h3 {
-    font-size: clamp(2px, 2vw, 30px);
+    font-size: clamp(18px, 2vw, 30px);
     font-weight: 300;
     letter-spacing: 6px;
     margin-bottom: 20px;
@@ -230,7 +227,7 @@ main {
 }
 
 .about p {
-    font-size: clamp(2px, 2vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     color: var(--color-texto-3);
 
 }
@@ -256,7 +253,8 @@ main {
     display: grid;
     place-items: center;
     position: relative;
-    grid-column: 7/13;
+    /* grid-column: 7/13; */
+    grid-area: image;
 }
 
 .cont-image {
@@ -311,7 +309,7 @@ main {
 .mi-cont-image img {
     object-fit: cover;
     aspect-ratio: 1/1;
-    width: 100%;  
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -351,86 +349,89 @@ main {
     padding: 20px;
     box-shadow: 0 4px 10px var(--color-shadow-2);
     display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-areas: "image contenido ";
     overflow: hidden;
     gap: 20px;
     position: relative;
-}
-.project-card:hover {
-    /* transform: scale(1.02); */
-    transition: box-shadow 0.2s;
-    box-shadow: var(--color-shadow) 0px 0px 20px 0px;
 
-}
-.project-card:hover .project-img img {
-    transform: scale(1.01);
-    /* transition: all 0.2s; */
-}
-
-/* animacion */
-
-.project-card {
     transition: transform 0.3s ease-out;
     will-change: transform;
+
+    &:hover {
+        transition: box-shadow 0.2s;
+        box-shadow: var(--color-shadow) 0px 0px 20px 0px;
+    }
 }
+
 
 /*---------- PROYECTO 1 ---------*/
 
 .project-card.project-1 {
     background-color: var(--color-resalte);
     box-shadow: var(--color-resalte) 0px 0px 20px 0px;
-    padding: 30px;
 }
+
 .project-card.project-1 .project-contenido {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .project-card.project-1 .project-titulo {
-    font-size: 30px;
     color: white;
     display: flex;
     align-items: center;
+
 }
+
 .project-card.project-1 .project-titulo img {
     width: 50px;
     margin-right: 10px;
 }
+
 .project-card.project-1 p {
     color: white;
 }
-.project-card.project-1 .project-img {
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    overflow: hidden;
-    position: relative;
+
+.project-card.project-1 .project-item {
+    border-color: white;
 }
 
 
 
 /* proyectos */
 
-.project-group {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-}
-
 .project-contenido {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    grid-area: contenido;
+}
+
+.project-contenido .project-titulo {
+    font-size: clamp(20px, 2vw, 30px);
+    color: var(--color-texto-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+        color: var(--color-resalte);
+    }
+}
+
+.project-cont-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: image;
 }
 
 .project-img {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -439,16 +440,12 @@ main {
 
 .project-img img {
     width: 100%;
-    aspect-ratio: 16/9;
-}
-
-.project-contenido .project-titulo {
-    font-size: 24px;
-    color: var(--color-texto-3);
+    height: 100%;
+    object-fit: cover;
 }
 
 .project-contenido p {
-    /* font-size: clamp(2px, 2vw, 20px); */
+    font-size: clamp(13px, 2vw, 16px);
     color: var(--color-texto-2);
 }
 
@@ -494,13 +491,11 @@ main {
     text-decoration: none;
     width: 60px;
     height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: auto;
     margin-left: auto;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
 
 }
 
@@ -553,7 +548,7 @@ main {
     grid-template-rows: repeat(2, 1fr);
     gap: 20px; */
     grid-template-areas: "front front back back back data data data"
-                        "front front tool tool tool tool tool tool";
+        "front front tool tool tool tool tool tool";
     /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
     gap: 20px;
 
@@ -581,6 +576,7 @@ main {
     display: grid;
     grid-template-rows: auto 1fr;
 }
+
 .skill-group.frontend .skill-items {
     display: grid;
     grid-template-columns: auto auto;
@@ -592,9 +588,11 @@ main {
 .skill-group.backend {
     grid-area: back;
 }
+
 .skill-group.tools {
     grid-area: tool;
 }
+
 .skill-group.databases {
     grid-area: data;
 }
@@ -625,6 +623,7 @@ main {
     object-fit: cover;
     overflow: hidden;
 }
+
 .skill-item:hover {
     transform: scale(1.1);
     transition: all 0.2s;
@@ -654,7 +653,7 @@ main {
 }
 
 .contact-contenido p {
-    font-size: 35px;
+    font-size: clamp(20px, 2vw, 30px);
     color: var(--color-texto-3);
 }
 
@@ -692,18 +691,44 @@ main {
     color: var(--color-resalte);
 }
 
-/* ----- MEDIA QUERIES ----- */ 
+/* ----- MEDIA QUERIES ----- */
 
 @media (max-width: 1200px) {
+
+    main {
+        padding: 20px 50px;
+    }
+
+    .navbar {
+        padding: 20px 50px;
+    }
+
+    .section {
+        min-height: fit-content;
+
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: "image" "contenido" ;
+    }
+
     .skills-grid {
-        grid-template-areas: "back data"
-                            "front tool";
+        grid-template-areas: "front data"
+            "front tool"
+            "back tool";
     }
 
     .skill-group.frontend .skill-items {
-        grid-template-columns: repeat(auto-fit,1fr);
+        grid-template-columns: repeat(auto-fit, 1fr);
     }
-    
+
 }
 
 @media (max-width: 800px) {
@@ -715,24 +740,26 @@ main {
         display: none;
     }
 
-    .navbar {
-        padding: 20px 50px;
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    main {
-        padding: 20px 50px;
-    }
+
 
     /* skills */
     .skills-grid {
         grid-template-areas: "front"
-                            "back"
-                            "tool"
-                            "data";
+            "back"
+            "tool"
+            "data";
     }
 
+
+
 }
-@media (max-width: 600px) {
+
+@media (max-width: 650px) {
 
     .navbar {
         padding: 20px 20px;
@@ -742,5 +769,49 @@ main {
         padding: 20px 20px;
     }
 
-}
+    /* presentacion */
 
+    .about-content {
+        grid-template-columns: 1fr;
+        grid-template-areas: "image"
+            "description";
+        place-items: center;
+
+    }
+
+    .about-description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-image {
+        padding: 0px 50px;
+        max-width: 350px;
+    }
+
+    .about h2 {
+        margin-bottom: 10px;
+    }
+
+    /* proyectos */
+
+    .project-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        padding: 0;
+
+    }
+
+    .project-contenido {
+        padding: 20px;
+    }
+
+    .project-img {
+        border-radius: 0px;
+    }
+
+
+}

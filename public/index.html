@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio Creativo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -72,30 +72,7 @@
             </div>
         </section>
 
-        <!-- SOBRE MI -->
-        <!-- <section id="mi" class="section mi">
-            <h2>Sobre mi</h2>
-            <div class="mi-content">
-                <div class="mi-image">
-                    <div class="mi-cont-image">
-                        <img src="./images/yo.jpg" alt="">
-                    </div>
-                </div>
-                <div class="mi-description">
-                    <h3>Soy diego</h3>
-                    <p>Soy una persona entusiasta y detallista apasionada por la programación. 
-                        Aunque me especializo en el desarrollo backend, 
-                        también me desenvuelvo bien en el frontend. Durante más de ocho años trabajé como electricista, 
-                        pero ahora me dedico por completo a la programación.
-                        Me encanta aprender nuevas tecnologías y mejorar mis habilidades cada día. 
-                        Disfruto desarrollando aplicaciones móviles y web, explorando constantemente nuevas herramientas y metodologías.
-                        Cuando no estoy programando, me gusta la carpintería y la impresión 3D.
-                    </p>    
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Sección Proyectos -->
+        <!-------- PROYECTOS -------->
         <section id="projects" class="section">
             <h2>Proyectos</h2>
 
@@ -105,7 +82,10 @@
                     <div class="project-contenido">
                         <div class="project-titulo">
                             <img src="images/GRENT-BLANCO.png" alt="Logo">
-                            Grent app
+                            <span>Grent app</span>
+                            <div class="proj-titulo-cont-ico">
+                                <i class='bx bx-lock-alt'></i>
+                            </div>
                         </div>
                         <p>
                             Aplicacion movil para gestionar arriendo de productos realizada con android studio (Java) e
@@ -130,30 +110,29 @@
                             </div>
 
                         </div>
-                        <div class="project-boton">
-                            
-                            <!-- <div class="boton-expand">
-                                <div>Ver proyecto</div>
-                            </div>
-                            <a href="#" target="_blank">
-                                <i class='bx bx-chevron-right'></i>
-                            </a> -->
+                    </div>
+                    <div class="project-cont-img">
+                        <div class="project-img">
+                            <img src="images/video-grent.gif" alt="Proyecto 1">
                         </div>
-                    </div>
-                    <div class="project-img">
-                        <img src="images/video-grent.gif" alt="Proyecto 1">
-                    </div>
+                    </div>                   
                 </div>
 
                 <div class="project-card project-2">
 
-                    <div class="project-img">
-                        <img src="images/sistema-reservas.png" alt="Proyecto 1">
-                    </div>
+                    <div class="project-cont-img">
+                        <div class="project-img">
+                            <img src="images/sistema-reservas.png" alt="Proyecto 1">
+                        </div>
+                    </div> 
 
                     <div class="project-contenido">
                         <div class="project-titulo">
-                            Sistema de reservas hotelero
+                            <span>PMS hotelero</span>
+                            <div class="proj-titulo-cont-ico">
+                                <i class='bx bx-code-alt' ></i>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>                           
                         </div>
                         <p>
                             Aplicacion web con una arquitectura cliente servidor realizada con react
@@ -174,23 +153,17 @@
                                 <p>Python</p>
                             </div>
                         </div>
-                        <div class="project-boton">
-                            <div class="boton-expand">
-                                <div>Ver proyecto</div>
-                            </div>
-                            <a href="#" target="_blank">
-                                <i class='bx bx-chevron-right'></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
 
                 <!-- <div class="project-group"> -->
 
                     <div class="project-card project-3">
-                        <div class="project-img">
-                            <img src="images/warriot-hotel-video.gif" alt="Proyecto 1">
-                        </div>
+                        <div class="project-cont-img">
+                            <div class="project-img">
+                                <img src="images/warriot-hotel-video.gif" alt="Proyecto 1">
+                            </div>
+                        </div> 
                         <div class="project-contenido">
                             <div class="project-titulo">
                                 Hotel page
@@ -210,21 +183,23 @@
                                     <p>Firebase</p>
                                 </div>
                             </div>
-                            <div class="project-boton">
+                            <!-- <div class="project-boton">
                                 <div class="boton-expand">
                                     <div>Ver proyecto</div>
                                 </div>
                                 <a href="#" target="_blank">
                                     <i class='bx bx-chevron-right'></i>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
                     <div class="project-card project-4">
-                        <div class="project-img">
-                            <img src="images/mi-portfolio.png" alt="Proyecto 1">
-                        </div>
+                        <div class="project-cont-img">
+                            <div class="project-img">
+                                <img src="images/mi-portfolio.png" alt="Proyecto 1">
+                            </div>
+                        </div> 
                         <div class="project-contenido">
                             <div class="project-titulo">
                                 Mi portfolio
@@ -248,23 +223,25 @@
                                     <p>JavaScript</p>
                                 </div>
                             </div>
-                            <div class="project-boton">
+                            <!-- <div class="project-boton">
                                 <div class="boton-expand">
                                     <div>Ver proyecto</div>
                                 </div>
                                 <a href="#" target="_blank">
                                     <i class='bx bx-chevron-right'></i>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
                 <!-- </div> -->
 
                 <div class="project-card project-5">
-                    <div class="project-img">
-                        <img src="images/sistema-reservas.png" alt="Proyecto 1">
-                    </div>
+                    <div class="project-cont-img">
+                        <div class="project-img">
+                            <img src="images/mi-portfolio.png" alt="Proyecto 1">
+                        </div>
+                    </div> 
                     <div class="project-contenido">
                         <div class="project-titulo">
                             Tienda Django
@@ -286,14 +263,14 @@
                                 <p>Django</p>
                             </div>
                         </div>
-                        <div class="project-boton">
+                        <!-- <div class="project-boton">
                             <div class="boton-expand">
                                 <div>Ver proyecto</div>
                             </div>
                             <a href="#" target="_blank">
                                 <i class='bx bx-chevron-right'></i>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -301,7 +278,7 @@
             </div>
         </section>
 
-        <!-- Sección Habilidades -->
+        <!---------- SKILLS ---------->
         <section id="skills" class="section skills">
             <h2>Tecnologias</h2>
             <div class="skills-grid">
@@ -374,7 +351,7 @@
                     <h3>Bases de datos</h3>
                     <div class="skill-items">
 
-                        <div class="skill-item">
+                        <div class="skill-item" title="MySQL">
                             <img src="images/ic_mysql.svg" alt="Logo">
                             <p>My SQL</p>
                         </div>
@@ -395,7 +372,7 @@
             </div>
         </section>
 
-        <!-- CONTACTO -->
+        <!---------- CONTACTO ---------->
         <section id="contact" class="section">
 
             <div class="contact-contenido">
@@ -418,12 +395,13 @@
         </section>
     </main>
 
+    <!---------- FOOTER ---------->
     <footer class="footer">
         <p>© 2025 Lkod. Todos los derechos reservados.</p>
         <p><a href="#about">Volver arriba</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 
