@@ -20,31 +20,31 @@
 
 <body>
     <!-- Barra de navegación -->
-    <header class="navbar">
-        <div class="cont-navbar">
+    <header class="header">
+        <div class="cont-header">
 
-            <div class="navbar-group">
-                <div class="menu">
+            <div class="header-group">
+                <div class="menu-icon" id="menu-icon">
                     <i class='bx bx-menu'></i>
                 </div>
                 <div class="logo">Lkod</div>
             </div>
 
-            <div class="navbar-group">
-                <nav>
-                    <a href="#about">Sobre mí</a>
+            <div class="header-group">
+                <nav id="navbar">
+                    <a href="#about">Inicio</a>
                     <a href="#projects">Proyectos</a>
                     <a href="#skills">Habilidades</a>
                     <a href="#contact">Contacto</a>
                 </nav>
                 <button id="tema"><i class='bx bx-moon'></i></button>
+                <button id="colores"><i class='bx bx-palette' ></i></i></button>
             </div>
         </div>
-
     </header>
 
     <main>
-        <!-- PRESENTACION -->
+        <!---------- PRESENTACION ---------->
         <section id="about" class="section about">
             <div class="about-content">
                 <div class="about-description">
@@ -52,7 +52,7 @@
                     <h3>Creando soluciones</h3>
                     <p>
                         Desarrollador adaptable y creativo que ama crear proyectos desafiantes,
-                        con gusto por el desarrollo movil y web enfocado en el desarrollo backend.
+                        con gusto por el desarrollo movil y web enfocado en el backend.
                     </p>
                     <div class="about-redes">
                         <a href="">
@@ -73,59 +73,63 @@
         </section>
 
         <!-------- PROYECTOS -------->
-        <section id="projects" class="section">
+        <section id="projects" class="section projects">
             <h2>Proyectos</h2>
+
+            <!-- proyecto 1 -->
+            <div class="project-card project-1">
+                <div class="project-cont-img">
+                    <div class="project-img">
+                        <img src="images/video-grent.gif" alt="Proyecto 1">
+                    </div>
+                </div> 
+                <div class="project-cont-img-fondo">
+                    <img src="images/GRENT-BLANCO.png" alt="Logo">
+                </div> 
+                <div class="project-contenido">
+                    <div class="project-titulo">
+                        <img src="images/GRENT-BLANCO.png" alt="Logo">
+                        <span>Grent app</span>
+                        <div class="proj-titulo-cont-ico">
+                            <i class='bx bx-lock-alt'></i>
+                        </div>
+                    </div>
+                    <p>
+                        Aplicación móvil para gestión de arriendo de productos
+                        desarrollada con Android Studio (Java) e integrada con Firebase. 
+                        La aplicación permite a los usuarios registrar y consultar arriendos, 
+                        utilizando una base de datos no relacional 
+                        en la nube de Firestore. Además, incorpora Firebase Authentication para el inicio de 
+                        sesión seguro con cuentas de correo electrónico.
+                    </p>
+                    <div class="project-tecnologias">
+
+                        <div class="project-item">
+                            <img src="images/java.svg" alt="Logo">
+                            <p>Java</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/android.svg" alt="Logo">
+                            <p>Android studio</p>
+                        </div>
+                        <div class="project-item">
+                            <img src="images/firebase.svg" alt="Logo">
+                            <p>Firebase</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
             <div class="project-grid">
 
-                <div class="project-card project-1">
-                    <div class="project-contenido">
-                        <div class="project-titulo">
-                            <img src="images/GRENT-BLANCO.png" alt="Logo">
-                            <span>Grent app</span>
-                            <div class="proj-titulo-cont-ico">
-                                <i class='bx bx-lock-alt'></i>
-                            </div>
-                        </div>
-                        <p>
-                            Aplicacion movil para gestionar arriendo de productos realizada con android studio (Java) e
-                            integrada con firebase
-                            Esta aplicacion permite a los usuarios llevar un registro de los arriendos realizados
-                            pudiendo acceder a ellos desde cualquier dispositivo ya que
-                            esta integrado con firebase en una base de datos no relacional.
-                        </p>
-                        <div class="project-tecnologias">
-
-                            <div class="project-item">
-                                <img src="images/java.svg" alt="Logo">
-                                <p>Java</p>
-                            </div>
-                            <div class="project-item">
-                                <img src="images/android.svg" alt="Logo">
-                                <p>Android studio</p>
-                            </div>
-                            <div class="project-item">
-                                <img src="images/firebase.svg" alt="Logo">
-                                <p>Firebase</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="project-cont-img">
-                        <div class="project-img">
-                            <img src="images/video-grent.gif" alt="Proyecto 1">
-                        </div>
-                    </div>                   
-                </div>
-
+                <!-- proyecto 2 -->
                 <div class="project-card project-2">
-
                     <div class="project-cont-img">
                         <div class="project-img">
                             <img src="images/sistema-reservas.png" alt="Proyecto 1">
                         </div>
                     </div> 
-
                     <div class="project-contenido">
                         <div class="project-titulo">
                             <span>PMS hotelero</span>
@@ -156,86 +160,85 @@
                     </div>
                 </div>
 
-                <!-- <div class="project-group"> -->
-
-                    <div class="project-card project-3">
-                        <div class="project-cont-img">
-                            <div class="project-img">
-                                <img src="images/warriot-hotel-video.gif" alt="Proyecto 1">
-                            </div>
-                        </div> 
-                        <div class="project-contenido">
-                            <div class="project-titulo">
-                                Hotel page
-                            </div>
-                            <p>
-                                Pagina web de hotel ficticio realizada con react que
-                                integra una api que muestra el clima en la portada principal.
-                            </p>
-                            <div class="project-tecnologias">
-
-                                <div class="project-item">
-                                    <img src="images/react.svg" alt="Logo">
-                                    <p>React</p>
-                                </div>
-                                <div class="project-item">
-                                    <img src="images/firebase.svg" alt="Logo">
-                                    <p>Firebase</p>
-                                </div>
-                            </div>
-                            <!-- <div class="project-boton">
-                                <div class="boton-expand">
-                                    <div>Ver proyecto</div>
-                                </div>
-                                <a href="#" target="_blank">
-                                    <i class='bx bx-chevron-right'></i>
-                                </a>
-                            </div> -->
+                <!-- proyecto 3 -->
+                <div class="project-card project-3">
+                    <div class="project-cont-img">
+                        <div class="project-img">
+                            <img src="images/warriot-hotel-video.gif" alt="Proyecto 1">
                         </div>
-                    </div>
-
-                    <div class="project-card project-4">
-                        <div class="project-cont-img">
-                            <div class="project-img">
-                                <img src="images/mi-portfolio.png" alt="Proyecto 1">
-                            </div>
-                        </div> 
-                        <div class="project-contenido">
-                            <div class="project-titulo">
-                                Mi portfolio
-                            </div>
-                            <p>
-                                Pagina web realizada en html css y un poco de javascript.
-                            </p>
-
-                            <div class="project-tecnologias">
-
-                                <div class="project-item">
-                                    <img src="images/html.svg" alt="Logo">
-                                    <p>Html</p>
-                                </div>
-                                <div class="project-item">
-                                    <img src="images/css.svg" alt="Logo">
-                                    <p>Css</p>
-                                </div>
-                                <div class="project-item">
-                                    <img src="images/javascript.svg" alt="Logo">
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-                            <!-- <div class="project-boton">
-                                <div class="boton-expand">
-                                    <div>Ver proyecto</div>
-                                </div>
-                                <a href="#" target="_blank">
-                                    <i class='bx bx-chevron-right'></i>
-                                </a>
-                            </div> -->
+                    </div> 
+                    <div class="project-contenido">
+                        <div class="project-titulo">
+                            Hotel page
                         </div>
+                        <p>
+                            Pagina web de hotel ficticio realizada con react que
+                            integra una api que muestra el clima en la portada principal.
+                        </p>
+                        <div class="project-tecnologias">
+
+                            <div class="project-item">
+                                <img src="images/react.svg" alt="Logo">
+                                <p>React</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/firebase.svg" alt="Logo">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <!-- <div class="project-boton">
+                            <div class="boton-expand">
+                                <div>Ver proyecto</div>
+                            </div>
+                            <a href="#" target="_blank">
+                                <i class='bx bx-chevron-right'></i>
+                            </a>
+                        </div> -->
                     </div>
+                </div>
 
-                <!-- </div> -->
+                <!-- proyecto 4 -->
+                <div class="project-card project-4">
+                    <div class="project-cont-img">
+                        <div class="project-img">
+                            <img src="images/mi-portfolio.png" alt="Proyecto 1">
+                        </div>
+                    </div> 
+                    <div class="project-contenido">
+                        <div class="project-titulo">
+                            Mi portfolio
+                        </div>
+                        <p>
+                            Pagina web realizada en html css y un poco de javascript.
+                        </p>
 
+                        <div class="project-tecnologias">
+
+                            <div class="project-item">
+                                <img src="images/html.svg" alt="Logo">
+                                <p>Html</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/css.svg" alt="Logo">
+                                <p>Css</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/javascript.svg" alt="Logo">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <!-- <div class="project-boton">
+                            <div class="boton-expand">
+                                <div>Ver proyecto</div>
+                            </div>
+                            <a href="#" target="_blank">
+                                <i class='bx bx-chevron-right'></i>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- proyecto 5 -->
                 <div class="project-card project-5">
                     <div class="project-cont-img">
                         <div class="project-img">
@@ -283,7 +286,7 @@
             <h2>Tecnologias</h2>
             <div class="skills-grid">
 
-                <div class="skill-group frontend">
+                <div class="skill-card frontend">
                     <h3>Frontend</h3>
                     <div class="skill-items">
                         <div class="skill-item">
@@ -305,7 +308,7 @@
                     </div>
                 </div>
 
-                <div class="skill-group backend">
+                <div class="skill-card backend">
                     <h3>Backend</h3>
                     <div class="skill-items">
 
@@ -324,7 +327,7 @@
                     </div>
                 </div>
 
-                <div class="skill-group tools">
+                <div class="skill-card tools">
                     <h3>Herramientas</h3>
                     <div class="skill-items">
 
@@ -347,7 +350,7 @@
                     </div>
                 </div>
 
-                <div class="skill-group databases">
+                <div class="skill-card databases">
                     <h3>Bases de datos</h3>
                     <div class="skill-items">
 
