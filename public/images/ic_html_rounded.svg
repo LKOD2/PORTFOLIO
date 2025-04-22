@@ -2,9 +2,9 @@
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 
 <svg
-   width="800"
-   height="800"
-   viewBox="0 0 800 800"
+   width="800px"
+   height="800px"
+   viewBox="0 0 32 32"
    fill="none"
    version="1.1"
    id="svg3"
@@ -16,23 +16,6 @@
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs3">
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect10"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,200,0,1 @ F,0,0,1,0,200,0,1 @ F,0,0,1,0,200,0,1 @ F,0,0,1,0,200,0,1"
-       radius="200"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="false"
-       hide_knots="false" />
     <inkscape:path-effect
        effect="fillet_chamfer"
        id="path-effect6"
@@ -55,8 +38,8 @@
        id="path-effect5"
        is_visible="true"
        lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,200,0,1 @ F,0,0,1,0,200,0,1 @ F,0,0,1,0,200,0,1 @ F,0,0,1,0,200,0,1"
-       radius="200"
+       nodesatellites_param="F,0,0,1,0,3,0,1 @ F,0,0,1,0,3,0,1 @ F,0,0,1,0,3,0,1 @ F,0,0,1,0,3,0,1"
+       radius="0"
        unit="px"
        method="auto"
        mode="F"
@@ -121,16 +104,19 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg3" />
   <path
-     id="rect10"
-     d="M 200,0 H 600 A 200,200 45 0 1 800,200 V 600 A 200,200 135 0 1 600,800 H 200 A 200,200 45 0 1 0,600 V 200 A 200,200 135 0 1 200,0 Z"
-     style="fill:#e44d26;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;paint-order:markers stroke fill" />
-  <path
      id="path10"
-     style="fill:#f16529;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;paint-order:markers stroke fill"
-     d="M 400 0 L 400 800 L 600 800 A 200 200 0 0 0 800 600 L 800 200 A 200 200 0 0 0 600 0 L 400 0 z " />
+     style="fill:#e44d26;stroke-width:0.067;paint-order:markers stroke fill"
+     d="M 32,16 A 16,16 0 0 1 16,32 16,16 0 0 1 0,16 16,16 0 0 1 16,0 16,16 0 0 1 32,16 Z" />
   <path
-     d="M 237.5,437.5 212.5,200 H 600 l -12.5,75 h -300 L 300,362.5 H 575 L 550,600 400,650 250,600 237.5,475 h 75 l 12.5,62.5 75,25 75,-25 12.5,-100 z"
-     fill="#ffffff"
-     id="path3"
-     style="stroke-width:25" />
+     id="rect6"
+     style="fill:#f16529;fill-opacity:1;stroke-width:3.65236;stroke-dasharray:none;paint-order:markers stroke fill"
+     d="M 16 0 L 16 32 A 16 16 0 0 0 32 16 A 16 16 0 0 0 16 0 z " />
+  <path
+     d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
+     fill="white"
+     id="path3" />
+  <path
+     style="fill:#e44d26;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.067;paint-order:markers stroke fill"
+     d="m 16,0 v 32 0"
+     id="path4" />
 </svg>

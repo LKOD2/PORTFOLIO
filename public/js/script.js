@@ -1,19 +1,11 @@
-// menu
+// MENU
 
 document.getElementById("menu-icon").addEventListener("click", function() {
     const navbar = document.getElementById("navbar");
     navbar.classList.toggle("active");
 });
 
-// DARK MODE
-document.getElementById("tema").addEventListener("click", function() {
-    document.body.classList.toggle("dark");
-    if(document.body.classList.contains("dark")){
-        localStorage.setItem("dark-mode", "true");
-    } else {
-        localStorage.setItem("dark-mode", "false");
-    }
-});
+// CARGA DEL TEMA
 
 document.addEventListener("DOMContentLoaded", function() {
     if(localStorage.getItem("dark-mode") === "true"){
@@ -23,18 +15,62 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    const aboutSection = document.querySelector('.about-content');
-    aboutSection.classList.add('animate');
+// DARK MODE
+document.getElementById("tema").addEventListener("click", function() {
+    document.body.classList.toggle("dark");
+    document.body.classList.remove("colorful");
+    if(document.body.classList.contains("dark")){
+        localStorage.setItem("dark-mode", "true");
+    } else {
+        localStorage.setItem("dark-mode", "false");
+    }
 });
 
+// COLORFUL MODE
 
-document.getElementById("colores").addEventListener("click", function() {
+document.getElementById("tema-colores").addEventListener("click", function() {
     document.body.classList.toggle("colorful");
+    document.body.classList.remove("dark");
     if(document.body.classList.contains("colorful")){
         localStorage.setItem("colorful-mode", "true");
     } else {
         localStorage.setItem("colorful-mode", "false");
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutSection = document.querySelector('.about-content');
+    aboutSection.classList.add('animate');
+});
+
+// ANIMACIONES
+
+let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const direction = scrollY > lastScrollY ? 'down' : 'up';
+        lastScrollY = scrollY;
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            const rect = card.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top < windowHeight && rect.bottom > 0) {
+                const distanceFromCenter = (rect.top + rect.height / 2) - windowHeight / 2;
+                const normalizedDistance = distanceFromCenter / (windowHeight / 1); // -1 a 1
+
+                let scale = 1 - Math.abs(normalizedDistance) * 0.2;
+                let translateY = normalizedDistance * 20;
+
+                if (direction === 'down') {
+                    scale += 0.02;
+                } else {
+                    scale -= 0.02;
+                }
+
+                card.style.transform = `translateY(${translateY}px) scale(${scale})`;
+            }
+        });
+    });

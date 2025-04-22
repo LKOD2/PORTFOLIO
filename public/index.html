@@ -33,36 +33,36 @@
             <div class="header-group">
                 <nav id="navbar">
                     <a href="#about">Inicio</a>
+                    <a href="about.html">Sobre mi</a>
                     <a href="#projects">Proyectos</a>
                     <a href="#skills">Habilidades</a>
                     <a href="#contact">Contacto</a>
                 </nav>
-                <button id="tema"><i class='bx bx-moon'></i></button>
-                <button id="colores"><i class='bx bx-palette' ></i></i></button>
+                <button id="tema" class="btn-tema" title="Cambiar tema"><i class='bx bx-moon'></i></button>
+                <button id="tema-colores" class="btn-colorful" title="Colores"><i class='bx bx-palette'></i></button>
             </div>
         </div>
     </header>
 
     <main>
-        <!---------- PRESENTACION ---------->
+        <!---------- Inicio ---------->
         <section id="about" class="section about">
             <div class="about-content">
                 <div class="about-description">
                     <h2>¡Hola! soy diego</h2>
-                    <h3>Creando soluciones</h3>
+                    <h3>Creo soluciones</h3>
                     <p>
                         Desarrollador adaptable y creativo que ama crear proyectos desafiantes,
-                        con gusto por el desarrollo movil y web enfocado en el backend.
+                        con gusto por el desarrollo movil y web enfocado al backend.
                     </p>
                     <div class="about-redes">
-                        <a href="">
+                        <a href="https://linkedin.com/in/diego-aac">
                             <img src="images/linkedin-oulined.svg" alt="React Logo">
                         </a>
-                        <a href="">
+                        <a href="https://github.com/LKOD2">
                             <img src="images/github-outlined.svg" alt="React Logo" class="svg-icon">
                         </a>
                     </div>
-
                 </div>
                 <div class="about-image">
                     <div class="cont-image">
@@ -78,206 +78,227 @@
 
             <!-- proyecto 1 -->
             <div class="project-card project-1">
-                <div class="project-cont-img">
-                    <div class="project-img">
-                        <img src="images/video-grent.gif" alt="Proyecto 1">
-                    </div>
-                </div> 
-                <div class="project-cont-img-fondo">
-                    <img src="images/GRENT-BLANCO.png" alt="Logo">
-                </div> 
                 <div class="project-contenido">
-                    <div class="project-titulo">
-                        <img src="images/GRENT-BLANCO.png" alt="Logo">
-                        <span>Grent app</span>
-                        <div class="proj-titulo-cont-ico">
-                            <i class='bx bx-lock-alt'></i>
+
+                    <div class="project-cont-img">
+                        <div class="project-img">
+                            <img src="images/video-grent.gif" alt="Proyecto 1">
                         </div>
                     </div>
-                    <p>
-                        Aplicación móvil para gestión de arriendo de productos
-                        desarrollada con Android Studio (Java) e integrada con Firebase. 
-                        La aplicación permite a los usuarios registrar y consultar arriendos, 
-                        utilizando una base de datos no relacional 
-                        en la nube de Firestore. Además, incorpora Firebase Authentication para el inicio de 
-                        sesión seguro con cuentas de correo electrónico.
-                    </p>
-                    <div class="project-tecnologias">
+                    <div class="project-detalles">
+                        <div class="project-titulo">
+                            <img src="images/GRENT-BLANCO.png" alt="Logo">
+                            <span>Grent app</span>
+                            <!-- <div class="proj-titulo-cont-ico">
+                                <i class='bx bx-lock-alt'></i>
+                            </div> -->
+                        </div>
+                        <div class="project-tecnologias">
 
-                        <div class="project-item">
-                            <img src="images/java.svg" alt="Logo">
-                            <p>Java</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="images/android.svg" alt="Logo">
-                            <p>Android studio</p>
-                        </div>
-                        <div class="project-item">
-                            <img src="images/firebase.svg" alt="Logo">
-                            <p>Firebase</p>
-                        </div>
+                            <div class="project-item">
+                                <img src="images/ic_java_rounded.svg" alt="Logo">
+                                <p>Java</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/ic_android_rounded.svg" alt="Logo">
+                                <p>Android studio</p>
+                            </div>
+                            <div class="project-item">
+                                <img src="images/ic_firebase_rounded.svg" alt="Logo">
+                                <p>Firebase</p>
+                            </div>
 
+                        </div>
+                        <p>
+                            Aplicación móvil para gestión de arriendo de productos
+                            desarrollada con Android Studio (Java) e integrada con Firebase.
+                            La aplicación permite a los usuarios registrar y consultar arriendos,
+                            utilizando una base de datos no relacional
+                            en la nube de Firestore. Además, incorpora Firebase Authentication para el inicio de
+                            sesión.
+                        </p>
+                    </div>
+                    <div class="project-cont-img-fondo">
+                        <img src="images/GRENT-BLANCO.png" alt="Logo">
                     </div>
                 </div>
             </div>
 
             <div class="project-grid">
 
+                <!-- modificacion -->
+
                 <!-- proyecto 2 -->
                 <div class="project-card project-2">
-                    <div class="project-cont-img">
-                        <div class="project-img">
-                            <img src="images/sistema-reservas.png" alt="Proyecto 1">
-                        </div>
-                    </div> 
                     <div class="project-contenido">
-                        <div class="project-titulo">
-                            <span>PMS hotelero</span>
-                            <div class="proj-titulo-cont-ico">
-                                <i class='bx bx-code-alt' ></i>
-                                <i class="bi bi-arrow-up-right"></i>
-                            </div>                           
-                        </div>
-                        <p>
-                            Aplicacion web con una arquitectura cliente servidor realizada con react
-                            para el frontend y django con django RestFramework para el backend.
-                        </p>
-                        <div class="project-tecnologias">
 
-                            <div class="project-item">
-                                <img src="images/react.svg" alt="Logo">
-                                <p>React</p>
-                            </div>
-                            <div class="project-item">
-                                <img src="images/django.svg" alt="Logo">
-                                <p>Django</p>
-                            </div>
-                            <div class="project-item">
-                                <img src="images/python.svg" alt="Logo">
-                                <p>Python</p>
+                        <div class="project-cont-img">
+                            <div class="project-img">
+                                <img src="images/sistema-reservas.png" alt="Proyecto 1">
                             </div>
                         </div>
+                        <div class="project-detalles">
+                            <div class="project-titulo">
+                                <span>PMS hotelero</span>
+                                <!-- <div class="proj-titulo-cont-ico">
+                                    <i class='bx bx-code-alt'></i>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </div> -->
+                            </div>
+                            <div class="project-tecnologias">
+
+                                <div class="project-item">
+                                    <img src="images/ic_react_rounded.svg" alt="Logo">
+                                    <p>React</p>
+                                </div>
+                                <div class="project-item">
+                                    <img src="images/ic_django_rounded.svg" alt="Logo">
+                                    <p>Django</p>
+                                </div>
+                                <div class="project-item">
+                                    <img src="images/ic_python_rounded.svg" alt="Logo">
+                                    <p>Python</p>
+                                </div>
+                            </div>
+                            <p>
+                                Aplicacion web con una arquitectura cliente servidor realizada con react
+                                para el frontend y django con django RestFramework para el backend.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-boton">
+                        <div class="boton-expand">
+                            <div>Ver proyecto</div>
+                        </div>
+                        <a href="#" target="_blank">
+                            <!-- <i class='bx bx-chevron-right'></i> -->
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- proyecto 3 -->
-                <div class="project-card project-3">
-                    <div class="project-cont-img">
-                        <div class="project-img">
-                            <img src="images/warriot-hotel-video.gif" alt="Proyecto 1">
-                        </div>
-                    </div> 
+                <div class="project-card project-5">
                     <div class="project-contenido">
-                        <div class="project-titulo">
-                            Hotel page
-                        </div>
-                        <p>
-                            Pagina web de hotel ficticio realizada con react que
-                            integra una api que muestra el clima en la portada principal.
-                        </p>
-                        <div class="project-tecnologias">
 
-                            <div class="project-item">
-                                <img src="images/react.svg" alt="Logo">
-                                <p>React</p>
-                            </div>
-                            <div class="project-item">
-                                <img src="images/firebase.svg" alt="Logo">
-                                <p>Firebase</p>
+                        <div class="project-cont-img">
+                            <div class="project-img">
+                                <img src="images/mi-portfolio.png" alt="Proyecto 1">
                             </div>
                         </div>
-                        <!-- <div class="project-boton">
-                            <div class="boton-expand">
-                                <div>Ver proyecto</div>
+                        <div class="project-detalles">
+                            <div class="project-titulo">
+                                Tienda Django
                             </div>
-                            <a href="#" target="_blank">
-                                <i class='bx bx-chevron-right'></i>
-                            </a>
-                        </div> -->
+                            <div class="project-tecnologias">
+                                <div class="project-item">
+                                    <img src="images/ic_python_rounded.svg" alt="Logo">
+                                    <p>Python</p>
+                                </div>
+                                <div class="project-item">
+                                    <img src="images/ic_django_rounded.svg" alt="Logo">
+                                    <p>Django</p>
+                                </div>
+                            </div>
+                            <p>
+                                Aplicación web para una tienda online con un sistema de gestión
+                                integrado, desarrollada completamente en Django. Implementa Django
+                                Auth para la gestión de usuarios, formularios creados con Django
+                                Forms, el sistema de plantillas de Django y una base de datos MySQL.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-boton">
+                        <div class="boton-expand">
+                            <div>Ver proyecto</div>
+                        </div>
+                        <a href="#" target="_blank">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- proyecto 4 -->
-                <div class="project-card project-4">
-                    <div class="project-cont-img">
-                        <div class="project-img">
-                            <img src="images/mi-portfolio.png" alt="Proyecto 1">
-                        </div>
-                    </div> 
+                <div class="project-card project-3">
                     <div class="project-contenido">
-                        <div class="project-titulo">
-                            Mi portfolio
-                        </div>
-                        <p>
-                            Pagina web realizada en html css y un poco de javascript.
-                        </p>
 
-                        <div class="project-tecnologias">
-
-                            <div class="project-item">
-                                <img src="images/html.svg" alt="Logo">
-                                <p>Html</p>
-                            </div>
-                            <div class="project-item">
-                                <img src="images/css.svg" alt="Logo">
-                                <p>Css</p>
-                            </div>
-                            <div class="project-item">
-                                <img src="images/javascript.svg" alt="Logo">
-                                <p>JavaScript</p>
+                        <div class="project-cont-img">
+                            <div class="project-img">
+                                <img src="images/warriot-hotel-video.gif" alt="Proyecto 1">
                             </div>
                         </div>
-                        <!-- <div class="project-boton">
-                            <div class="boton-expand">
-                                <div>Ver proyecto</div>
+                        <div class="project-detalles">
+                            <div class="project-titulo">
+                                Hotel page
                             </div>
-                            <a href="#" target="_blank">
-                                <i class='bx bx-chevron-right'></i>
-                            </a>
-                        </div> -->
+                            <div class="project-tecnologias">
+                                <div class="project-item">
+                                    <img src="images/ic_react_rounded.svg" alt="Logo">
+                                    <p>React</p>
+                                </div>
+                                <div class="project-item">
+                                    <img src="images/ic_firebase_rounded.svg" alt="Logo">
+                                    <p>Firebase</p>
+                                </div>
+                            </div>
+                            <p>
+                                Pagina web de hotel ficticio realizada con react que
+                                integra una api que muestra el clima en la portada principal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-boton">
+                        <div class="boton-expand">
+                            <div>Ver proyecto</div>
+                        </div>
+                        <a href="#" target="_blank">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- proyecto 5 -->
-                <div class="project-card project-5">
-                    <div class="project-cont-img">
-                        <div class="project-img">
-                            <img src="images/mi-portfolio.png" alt="Proyecto 1">
-                        </div>
-                    </div> 
+                <div class="project-card project-4">
                     <div class="project-contenido">
-                        <div class="project-titulo">
-                            Tienda Django
-                        </div>
-                        <p>
-                            Aplicación web para una tienda online con un sistema de gestión
-                            integrado, desarrollada completamente en Django. Implementa Django
-                            Auth para la gestión de usuarios, formularios creados con Django
-                            Forms, el sistema de plantillas de Django y una base de datos MySQL.
-                        </p>
-                        <div class="project-tecnologias">
 
-                            <div class="project-item">
-                                <img src="images/python.svg" alt="Logo">
-                                <p>Python</p>
-                            </div>
-                            <div class="project-item">
-                                <img src="images/django.svg" alt="Logo">
-                                <p>Django</p>
+                        <div class="project-cont-img">
+                            <div class="project-img">
+                                <img src="images/mi-portfolio.png" alt="Proyecto 1">
                             </div>
                         </div>
-                        <!-- <div class="project-boton">
-                            <div class="boton-expand">
-                                <div>Ver proyecto</div>
+                        <div class="project-detalles">
+                            <div class="project-titulo">
+                                Mi portfolio
                             </div>
-                            <a href="#" target="_blank">
-                                <i class='bx bx-chevron-right'></i>
-                            </a>
-                        </div> -->
+                            <div class="project-tecnologias">
+                                <div class="project-item">
+                                    <img src="images/ic_html_rounded.svg" alt="Logo">
+                                    <p>Html</p>
+                                </div>
+                                <div class="project-item">
+                                    <img src="images/ic_css_rounded.svg" alt="Logo">
+                                    <p>Css</p>
+                                </div>
+                                <div class="project-item">
+                                    <img src="images/ic_javascript_rounded.svg" alt="Logo">
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                            <p>
+                                Pagina web realizada en html css y un poco de javascript.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-boton">
+                        <div class="boton-expand">
+                            <div>Ver proyecto</div>
+                        </div>
+                        <a href="#" target="_blank">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
                     </div>
                 </div>
 
-               
             </div>
         </section>
 
@@ -289,20 +310,21 @@
                 <div class="skill-card frontend">
                     <h3>Frontend</h3>
                     <div class="skill-items">
-                        <div class="skill-item">
-                            <img src="images/html.svg" alt="Logo">
+
+                        <div class="skill-item" title="HTML">
+                            <img src="images/ic_html_rounded.svg" alt="Logo">
                             <p>HTML</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/css.svg" alt="Logo">
+                        <div class="skill-item" title="CSS">
+                            <img src="images/ic_css_rounded.svg" alt="Logo">
                             <p>CSS</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/javascript.svg" alt="Django Logo">
+                        <div class="skill-item" title="JavaScript">
+                            <img src="images/ic_javascript_rounded.svg" alt="Django Logo">
                             <p>JavaScript</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/react.svg" alt="Logo">
+                        <div class="skill-item" title="React">
+                            <img src="images/ic_react_rounded.svg" alt="Logo">
                             <p>React</p>
                         </div>
                     </div>
@@ -312,16 +334,16 @@
                     <h3>Backend</h3>
                     <div class="skill-items">
 
-                        <div class="skill-item">
-                            <img src="images/python.svg" alt="React Logo">
+                        <div class="skill-item" title="Python">
+                            <img src="images/ic_python_rounded.svg" alt="React Logo">
                             <p>Python</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/django.svg" alt="Logo">
+                        <div class="skill-item" title="Django">
+                            <img src="images/ic_django_rounded.svg" alt="Logo">
                             <p>Django</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/java.svg" alt="Logo">
+                        <div class="skill-item" title="Java">
+                            <img src="images/ic_java_rounded.svg" alt="Logo">
                             <p>Java</p>
                         </div>
                     </div>
@@ -331,20 +353,20 @@
                     <h3>Herramientas</h3>
                     <div class="skill-items">
 
-                        <div class="skill-item">
-                            <img src="images/git.svg" alt="Logo">
+                        <div class="skill-item" title="Git">
+                            <img src="images/ic_git_rounded.svg" alt="Logo">
                             <p>Git</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/github1.svg" alt="Logo">
+                        <div class="skill-item" title="GitHub">
+                            <img src="images/ic_github1_rounded.svg" alt="Logo">
                             <p>Github</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/firebase.svg" alt="Logo">
+                        <div class="skill-item" title="Firebase">
+                            <img src="images/ic_firebase_rounded.svg" alt="Logo">
                             <p>Firebase</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/android.svg" alt="Logo">
+                        <div class="skill-item" title="Android Studio">
+                            <img src="images/ic_android_rounded.svg" alt="Logo">
                             <p>Android studio</p>
                         </div>
                     </div>
@@ -355,16 +377,16 @@
                     <div class="skill-items">
 
                         <div class="skill-item" title="MySQL">
-                            <img src="images/ic_mysql.svg" alt="Logo">
+                            <img src="images/ic_mysql_rounded.svg" alt="Logo">
                             <p>My SQL</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/ic_mongodb.svg" alt="Logo">
+                        <div class="skill-item" title="MongoDB">
+                            <img src="images/ic_mongodb_rounded.svg" alt="Logo">
                             <p>Mongo db</p>
                         </div>
-                        <div class="skill-item">
-                            <img src="images/firebase.svg" alt="Logo">
-                            <p>Firebase</p>
+                        <div class="skill-item" title="Firestore">
+                            <img src="images/ic_firebase_rounded.svg" alt="Logo">
+                            <p>Firestore</p>
                         </div>
                     </div>
                 </div>
@@ -376,19 +398,19 @@
         </section>
 
         <!---------- CONTACTO ---------->
-        <section id="contact" class="section">
+        <section id="contact" class="section contact">
 
             <div class="contact-contenido">
                 <p>👋 Que bueno verte acá</p>
                 <p>¡Hablame!</p>
                 <div class="contact-iconos">
-                    <a href="mailto:tuemail@example.com">
+                    <a href="mailto:a2diego.job@gmail.com">
                         <i class='bx bx-envelope'></i>
                     </a>
-                    <a href="">
+                    <a href="https://linkedin.com/in/diego-aac">
                         <i class='bx bxl-linkedin'></i>
                     </a>
-                    <a href="">
+                    <a href="https://github.com/LKOD2">
                         <i class='bx bxl-github'></i>
                     </a>
                 </div>
@@ -406,38 +428,5 @@
 
     <script src="js/script.js"></script>
 </body>
-
-
-<script>
-    let lastScrollY = window.scrollY;
-    
-    window.addEventListener('scroll', () => {
-        const scrollY = window.scrollY;
-        const direction = scrollY > lastScrollY ? 'down' : 'up';
-        lastScrollY = scrollY;
-    
-        document.querySelectorAll('.project-card').forEach(card => {
-            const rect = card.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-    
-            if (rect.top < windowHeight && rect.bottom > 0) {
-                const distanceFromCenter = (rect.top + rect.height / 2) - windowHeight / 2;
-                const normalizedDistance = distanceFromCenter / (windowHeight / 1); // -1 a 1
-    
-                let scale = 1 - Math.abs(normalizedDistance) * 0.2;
-                let translateY = normalizedDistance * 20;
-    
-                if (direction === 'down') {
-                    scale += 0.02;
-                } else {
-                    scale -= 0.02;
-                }
-    
-                card.style.transform = `translateY(${translateY}px) scale(${scale})`;
-            }
-        });
-    });
-    </script>
-    
 
 </html>
