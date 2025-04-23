@@ -11,11 +11,11 @@ html {
 body {
     font-family: 'poppins';
     line-height: 1.6;
-    min-width: 300px;
+    min-width: 350px;
     background-color: var(--color-fondo);
 
     --color-resalte: #007bff;
-    --color-resalte-2: #0056b3;
+    --color-resalte-2: #1888ff;
 
     --color-texto: black;
     --color-texto-2: #6E6E7F;
@@ -121,6 +121,8 @@ main {
     position: sticky;
     top: 0;
     z-index: 100;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .cont-header {
@@ -259,11 +261,7 @@ body.colorful .btn-colorful i {
 
 /* -------- INICIO --------- */
 
-.section.animate {
-    opacity: 1;
-}
-
-.about-content {
+.home-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "description image";
@@ -273,17 +271,17 @@ body.colorful .btn-colorful i {
     animation: fadeIn 1s forwards;
 }
 
-.about-description {
+.home-description {
     grid-area: description;
 }
 
-.about h2 {
+.home h2 {
     font-size: clamp(25px, 5vw, 60px);
     font-weight: normal;
     color: var(--color-texto);
 }
 
-.about h3 {
+.home h3 {
     font-size: clamp(18px, 2vw, 30px);
     font-weight: 300;
     letter-spacing: 6px;
@@ -291,19 +289,19 @@ body.colorful .btn-colorful i {
     color: var(--color-texto-2);
 }
 
-.about p {
+.home p {
     font-size: clamp(16px, 2vw, 20px);
     color: var(--color-texto-3);
 
 }
 
-.about-redes {
+.home-redes {
     display: flex;
     gap: 20px;
     margin-top: 20px;
 }
 
-.about-redes img {
+.home-redes img {
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -319,7 +317,7 @@ body.colorful .btn-colorful i {
     }
 }
 
-.about-image {
+.home-image {
     display: grid;
     place-items: center;
     position: relative;
@@ -340,7 +338,7 @@ body.colorful .btn-colorful i {
     box-shadow: var(--color-shadow) 0px 0px 50px 0px;
 }
 
-.about-image img {
+.home-image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -402,6 +400,15 @@ body.colorful .btn-colorful i {
 
 /*-- PROYECTO 1 --*/
 
+.project-card.project-1 {
+
+    &:hover .project-contenido {
+        transition: box-shadow 0.2s;
+        box-shadow: white 0px 0px 20px 0px;
+        border: 2px solid white;
+    }
+}
+
 .project-card.project-1 .project-contenido {
     overflow: hidden;
     background-color: var(--color-resalte);
@@ -441,10 +448,13 @@ body.colorful .btn-colorful i {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-
 }
 
-/*-- otros proyectos --*/
+.project-card.project-1 .project-boton {
+    border: 2px solid white;
+}
+
+/* grid */
 
 .project-cont-img {
     width: 100%;
@@ -452,7 +462,6 @@ body.colorful .btn-colorful i {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .project-img {
@@ -469,7 +478,7 @@ body.colorful .btn-colorful i {
     object-fit: cover;
 }
 
-/* project contenido */
+/* contenido */
 
 .project-detalles {
     display: flex;
@@ -492,8 +501,7 @@ body.colorful .btn-colorful i {
 .project-tecnologias {
     display: flex;
     align-items: center;
-    gap: 10px;
-
+    gap: 10px; 
 }
 
 .project-item {
@@ -507,7 +515,6 @@ body.colorful .btn-colorful i {
     border-radius: 50px;
     border: 1px solid var(--color-texto-2);
     max-height: fit-content;
-
 }
 
 .project-item img {
@@ -540,27 +547,26 @@ body.colorful .btn-colorful i {
     position: absolute;
     bottom: -10px;
     right: -10px;
-    /* top: -10px; */
     opacity: 0;
 
-    /* &:hover::before {
-        content: "Ver Proyecto ";
-        position: absolute;
-        left: -140px;   
-        top: -50%;
-        transform: translateY(-50%);
+    &:hover {
         background-color: var(--color-resalte-2);
-        padding: 5px 10px;
-        border-radius: 30px 30px 0px 30px;
-        color: white;
-        
-        font-weight: 500;
-        z-index: 1;
-        width: 120px;
-        text-align: center;
+        width: auto;
         transition: all 0.5s;
+    }
 
-    } */
+    &:active {
+        background-color: var(--color-resalte-2);
+        scale: 1.3;
+        transition: all 0.2s;
+    }
+
+    &:hover .boton-expand {
+        width: 130px;
+        transition: all 0.5s;
+    
+    }
+    
 }
 
 
@@ -578,19 +584,6 @@ body.colorful .btn-colorful i {
     width: 0px;
     text-wrap: nowrap;
 }
-
-.project-boton:hover {
-    background-color: var(--color-resalte-2);
-    width: auto;
-    transition: all 0.5s;
-}
-
-.project-boton:hover .boton-expand {
-    width: 130px;
-    transition: all 0.5s;
-
-}
-
 
 /* ----- TECNOLOGIAS ----- */
 
@@ -785,14 +778,6 @@ body.colorful .btn-colorful i {
         grid-template-rows: 1fr;
     }
 
-    /* .project-detalles {
-        grid-area: contenido;
-    }
-
-    .project-cont-img {
-        grid-area: image;
-    } */
-
     /* skills */
 
     .skills-grid {
@@ -919,7 +904,7 @@ body.colorful .btn-colorful i {
 
     /* inicio */
 
-    .about-content {
+    .home-content {
         grid-template-columns: 1fr;
         grid-template-areas: "image"
             "description";
@@ -927,7 +912,7 @@ body.colorful .btn-colorful i {
 
     }
 
-    .about-description {
+    .home-description {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -935,12 +920,12 @@ body.colorful .btn-colorful i {
         justify-content: center;
     }
 
-    .about-image {
+    .home-image {
         padding: 0px 50px;
         max-width: 350px;
     }
 
-    .about h2 {
+    .home h2 {
         margin-bottom: 10px;
     }
 
@@ -963,3 +948,94 @@ body.colorful .btn-colorful i {
 
 
 }
+
+@media (max-width: 400px) {
+
+    .project-tecnologias .project-item p {
+        display: none;
+    }
+}
+
+
+
+/* &:hover::before {
+        content: "Ver Proyecto ";
+        position: absolute;
+        left: -140px;   
+        top: -50%;
+        transform: translateY(-50%);
+        background-color: var(--color-resalte-2);
+        padding: 5px 10px;
+        border-radius: 30px 30px 0px 30px;
+        color: white;
+        
+        font-weight: 500;
+        z-index: 1;
+        width: 120px;
+        text-align: center;
+        transition: all 0.5s;
+
+    } */
+
+
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    .skill-card {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.5s ease-out;
+    }
+    
+    .skill-card.visible {
+        opacity: 1;
+        transform: none;
+    }
+    
+    .skill-card.frontend.visible {
+        animation: fadeInLeft 0.5s ease forwards;
+    }
+    
+    .skill-card.backend.visible {
+        animation: fadeInRight 0.8s ease forwards;
+    }
+    
+    .skill-card.tools.visible {
+        animation: fadeInUp 1s ease forwards;
+    }
+    
+    .skill-card.databases.visible {
+        animation: fadeInRight 1.2s ease forwards;
+    }
+    

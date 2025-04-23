@@ -32,10 +32,9 @@
 
             <div class="header-group">
                 <nav id="navbar">
-                    <a href="#about">Inicio</a>
-                    <a href="about.html">Sobre mi</a>
+                    <a href="#home">Inicio</a>
                     <a href="#projects">Proyectos</a>
-                    <a href="#skills">Habilidades</a>
+                    <a href="#skills">Tecnologías</a>
                     <a href="#contact">Contacto</a>
                 </nav>
                 <button id="tema" class="btn-tema" title="Cambiar tema"><i class='bx bx-moon'></i></button>
@@ -46,16 +45,16 @@
 
     <main>
         <!---------- Inicio ---------->
-        <section id="about" class="section about">
-            <div class="about-content">
-                <div class="about-description">
+        <section id="home" class="section home">
+            <div class="home-content">
+                <div class="home-description">
                     <h2>¡Hola! soy diego</h2>
                     <h3>Creo soluciones</h3>
                     <p>
                         Desarrollador adaptable y creativo que ama crear proyectos desafiantes,
                         con gusto por el desarrollo movil y web enfocado al backend.
                     </p>
-                    <div class="about-redes">
+                    <div class="home-redes">
                         <a href="https://linkedin.com/in/diego-aac">
                             <img src="images/linkedin-oulined.svg" alt="React Logo">
                         </a>
@@ -64,7 +63,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="about-image">
+                <div class="home-image">
                     <div class="cont-image">
                         <img src="./images/yo_pixar.png" alt="">
                     </div>
@@ -122,11 +121,17 @@
                         <img src="images/GRENT-BLANCO.png" alt="Logo">
                     </div>
                 </div>
+                <div class="project-boton">
+                    <div class="boton-expand">
+                        <div>Ver proyecto</div>
+                    </div>
+                    <a href="#" target="_blank">
+                        <i class='bx bx-lock-alt'></i>
+                    </a>
+                </div>
             </div>
 
             <div class="project-grid">
-
-                <!-- modificacion -->
 
                 <!-- proyecto 2 -->
                 <div class="project-card project-2">
@@ -134,7 +139,7 @@
 
                         <div class="project-cont-img">
                             <div class="project-img">
-                                <img src="images/sistema-reservas.png" alt="Proyecto 1">
+                                <img src="images/img-pms-hotelero.png" alt="Proyecto 1">
                             </div>
                         </div>
                         <div class="project-detalles">
@@ -147,15 +152,15 @@
                             </div>
                             <div class="project-tecnologias">
 
-                                <div class="project-item">
+                                <div class="project-item" title="React">
                                     <img src="images/ic_react_rounded.svg" alt="Logo">
                                     <p>React</p>
                                 </div>
-                                <div class="project-item">
+                                <div class="project-item" title="Django">
                                     <img src="images/ic_django_rounded.svg" alt="Logo">
                                     <p>Django</p>
                                 </div>
-                                <div class="project-item">
+                                <div class="project-item" title="Python">
                                     <img src="images/ic_python_rounded.svg" alt="Logo">
                                     <p>Python</p>
                                 </div>
@@ -170,8 +175,7 @@
                         <div class="boton-expand">
                             <div>Ver proyecto</div>
                         </div>
-                        <a href="#" target="_blank">
-                            <!-- <i class='bx bx-chevron-right'></i> -->
+                        <a href="" target="_blank">
                             <i class="bi bi-box-arrow-up-right"></i>
                         </a>
                     </div>
@@ -191,11 +195,11 @@
                                 Tienda Django
                             </div>
                             <div class="project-tecnologias">
-                                <div class="project-item">
+                                <div class="project-item" title="Python">
                                     <img src="images/ic_python_rounded.svg" alt="Logo">
                                     <p>Python</p>
                                 </div>
-                                <div class="project-item">
+                                <div class="project-item" title="Django">
                                     <img src="images/ic_django_rounded.svg" alt="Logo">
                                     <p>Django</p>
                                 </div>
@@ -232,18 +236,19 @@
                                 Hotel page
                             </div>
                             <div class="project-tecnologias">
-                                <div class="project-item">
+                                <div class="project-item" title="React">
                                     <img src="images/ic_react_rounded.svg" alt="Logo">
                                     <p>React</p>
                                 </div>
-                                <div class="project-item">
+                                <div class="project-item" title="Firebase">
                                     <img src="images/ic_firebase_rounded.svg" alt="Logo">
                                     <p>Firebase</p>
                                 </div>
                             </div>
                             <p>
-                                Pagina web de hotel ficticio realizada con react que
-                                integra una api que muestra el clima en la portada principal.
+                                Página web de un hotel ficticio realizada con React y React Router DOM 
+                                para el manejo de rutas. Está montado en un hosting de Firebase y además 
+                                integra una API que muestra el clima en la portada principal.
                             </p>
                         </div>
                     </div>
@@ -271,15 +276,15 @@
                                 Mi portfolio
                             </div>
                             <div class="project-tecnologias">
-                                <div class="project-item">
+                                <div class="project-item" title="HTML">
                                     <img src="images/ic_html_rounded.svg" alt="Logo">
                                     <p>Html</p>
                                 </div>
-                                <div class="project-item">
+                                <div class="project-item" title="CSS">
                                     <img src="images/ic_css_rounded.svg" alt="Logo">
                                     <p>Css</p>
                                 </div>
-                                <div class="project-item">
+                                <div class="project-item" title="JavaScript">
                                     <img src="images/ic_javascript_rounded.svg" alt="Logo">
                                     <p>JavaScript</p>
                                 </div>
@@ -304,7 +309,7 @@
 
         <!---------- SKILLS ---------->
         <section id="skills" class="section skills">
-            <h2>Tecnologias</h2>
+            <h2>Tecnologías</h2>
             <div class="skills-grid">
 
                 <div class="skill-card frontend">
@@ -390,10 +395,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </section>
 
@@ -423,7 +424,7 @@
     <!---------- FOOTER ---------->
     <footer class="footer">
         <p>© 2025 Lkod. Todos los derechos reservados.</p>
-        <p><a href="#about">Volver arriba</a></p>
+        <p><a href="#home">Volver arriba</a></p>
     </footer>
 
     <script src="js/script.js"></script>
