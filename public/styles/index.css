@@ -142,8 +142,13 @@ main {
 }
 
 .header .logo {
-    color: var(--color-resalte);
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.header .logo img {
+    width: 50px;
 }
 
 .header-group {
@@ -152,6 +157,11 @@ main {
 }
 
 /* botones */
+
+.header-btn-group {
+    display: flex;
+    gap: 15px;
+}
 
 .header button {
     display: grid;
@@ -793,6 +803,10 @@ body.colorful .btn-colorful i {
     .section {
         min-height: fit-content;
 
+    }
+
+    .header .logo {
+        margin-left: 0px;
     }
 
     /* MENU */
