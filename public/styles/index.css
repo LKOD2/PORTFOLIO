@@ -292,7 +292,6 @@ body.colorful .btn-colorful i {
 .home p {
     font-size: clamp(16px, 2vw, 20px);
     color: var(--color-texto-3);
-
 }
 
 .home-redes {
@@ -396,7 +395,6 @@ body.colorful .btn-colorful i {
     transition: transform 0.3s ease-out;
     will-change: transform;
 }
-
 
 /*-- PROYECTO 1 --*/
 
@@ -569,8 +567,6 @@ body.colorful .btn-colorful i {
     
 }
 
-
-
 .project-boton a {
     font-size: 20px;
     display: flex;
@@ -593,7 +589,6 @@ body.colorful .btn-colorful i {
     grid-template-areas: "front front back back data data"
         "front front tool tool tool tool";
     gap: 20px;
-
 }
 
 .skill-card {
@@ -615,8 +610,6 @@ body.colorful .btn-colorful i {
     box-shadow: var(--color-shadow) 0px 0px 20px 0px;
 
 }
-
-
 
 .skill-card.frontend .skill-items {
     display: grid;
@@ -649,7 +642,6 @@ body.colorful .btn-colorful i {
     margin-bottom: 10px;
     font-weight: normal;
 }
-
 
 .skill-items {
     display: grid;
@@ -689,7 +681,6 @@ body.colorful .btn-colorful i {
 }
 
 /* ----- CONTACTO ----- */
-
 
 .contact-contenido {
     display: flex;
@@ -877,9 +868,9 @@ body.colorful .btn-colorful i {
     .skills-grid {
         grid-template-columns: 1fr;
         grid-template-areas: "front"
-            "back"
-            "tool"
-            "data";
+                            "back"
+                            "tool"
+                            "data";
     }
 
     .skill-card.frontend .skill-items {
@@ -894,11 +885,11 @@ body.colorful .btn-colorful i {
 
 @media (max-width: 650px) {
 
-    .header {
+    main {
         padding: 20px 20px;
     }
 
-    main {
+    .header {
         padding: 20px 20px;
     }
 
@@ -956,28 +947,7 @@ body.colorful .btn-colorful i {
     }
 }
 
-
-
-/* &:hover::before {
-        content: "Ver Proyecto ";
-        position: absolute;
-        left: -140px;   
-        top: -50%;
-        transform: translateY(-50%);
-        background-color: var(--color-resalte-2);
-        padding: 5px 10px;
-        border-radius: 30px 30px 0px 30px;
-        color: white;
-        
-        font-weight: 500;
-        z-index: 1;
-        width: 120px;
-        text-align: center;
-        transition: all 0.5s;
-
-    } */
-
-
+/* ---------- ANIMACION SKILLS ---------- */
 
     @keyframes fadeInUp {
         0% {
