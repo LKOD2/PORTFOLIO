@@ -39,41 +39,7 @@ document.getElementById("tema-colores").addEventListener("click", function() {
     }
 });
 
-// ANIMACIONES
-
-let lastScrollY = window.scrollY;
-
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const direction = scrollY > lastScrollY ? 'down' : 'up';
-    lastScrollY = scrollY;
-
-    document.querySelectorAll('.project-card').forEach(card => {
-        const rect = card.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
-        if (rect.top < windowHeight && rect.bottom > 0) {
-            const distanceFromCenter = (rect.top + rect.height / 2) - windowHeight / 2;
-            const normalizedDistance = distanceFromCenter / (windowHeight / 1); // -1 a 1
-
-            let scale = 1 - Math.abs(normalizedDistance) * 0.2;
-            let translateY = normalizedDistance * 20;
-
-            if (direction === 'down') {
-                scale += 0.02;
-            } else {
-                scale -= 0.02;
-            }
-
-            card.style.transform = `translateY(${translateY}px) scale(${scale})`;
-        }
-    });
-});
-
-
-
-
-// ---
+// ANIMACION SKILLS
 
 
 document.addEventListener("DOMContentLoaded", () => {
